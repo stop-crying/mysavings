@@ -22,7 +22,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[#353747]">
       <div className="h-full w-full flex items-center justify-center flex-col">
         <span className="w-full flex items-center justify-center p-10 gap-3">
-          <Image src={saving} alt={""} />
+        
           <h1 className="text-xl tracking-wider font-light ">My Savings</h1>
         </span>
         <div className="w-full flex flex-col gap-3 items-center justify-center bg-[#353747] p-10">
