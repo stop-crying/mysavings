@@ -7,6 +7,7 @@ import saving from "/Users/mac/Desktop/mysavings/assets/savinngs.svg";
 import { useState } from "react";
 import { savingsArray } from "./components/PersornalSavings";
 import Popup from "reactjs-popup";
+import Savings from "./savings/page";
 
 export default function Home() {
   const [value, setValue] = useState<number>(0);
@@ -46,16 +47,7 @@ export default function Home() {
           <h2 className="w-full text-start font-light tracking-wide ">
             Personal Savings
           </h2>
-          {savingsArray.map((savings, key) => {
-            return (
-              <Personal
-                toDo={savings.todo}
-                price={savings.price}
-                image={savings.image}
-                key={key}
-              />
-            );
-          })}
+            <Savings />
         </div>
         <div className="flex flex-col w-full items-center justify-center gap-10 p-10">
           <p className="w-full text-start font-light tracking-wide text-[#797b8a] ">
