@@ -1,6 +1,4 @@
-// import outings from "/Users/mac/Desktop/mysavings/assets/outings.svg";
-// import apartment from "/Users/mac/Desktop/mysavings/assets/apartment.svg";
-// import gadget from "/Users/mac/Desktop/mysavings/assets/gadgets.svg";
+
 
 
 
