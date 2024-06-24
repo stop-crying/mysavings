@@ -49,7 +49,7 @@ export default function Home() {
           </h2>
             <Savings />
         </div>
-        <div className="flex flex-col w-full items-center justify-center gap-10 p-10">
+        <div className="flex flex-col w-full items-center justify-center gap-10 px-10">
           <p className="w-full text-start font-light tracking-wide text-[#797b8a] ">
             One Click Saving
           </p>
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <Popup
                 trigger={
-                  <button className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl">
+                  <button className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl">
                     Custom
                   </button>
                 }
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl"
+                className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
                 onClick={() => setValue(value + 10)}
               >
                 £10
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl"
+                className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
                 onClick={() => setValue(value + 15)}
               >
                 £15
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl"
+                className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
                 onClick={() => setValue(value + 25)}
               >
                 £25
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl"
+                className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
                 onClick={() => setValue(value + 50)}
               >
                 £50
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="w-[100px] h-[45px] bg-[#fe8d18] text-lg tracking-wide font-semibold rounded-2xl"
+                className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
                 onClick={() => setValue(value + 100)}
               >
                 £100
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
         <div className="w-full p-10  ">
           <button
-            className="w-full p-10 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-wide hover:-translate-y-1 duration-300 "
+            className="w-full py-6 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-wide hover:-translate-y-1 duration-300 "
             onClick={() => {
               setValue(value);
             }}

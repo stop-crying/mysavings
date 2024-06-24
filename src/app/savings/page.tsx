@@ -72,7 +72,7 @@ export default function Savings() {
       <div className="w-full mt-5">
         <Popup
           trigger={
-            <button className="w-full h-[50px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest ">
+            <button className="w-full py-6 text-center bg-[#da8113] text-white rounded-3xl text-sm font-light  tracking-widest ">
               Create new savings
             </button>
           }
@@ -107,7 +107,7 @@ export default function Savings() {
               className="w-full h-[40px] placeholder:text-sm placeholder:font-light pl-5 text-sm font-bold outline-none rounded-xl text-black "
             />
             <button
-              className="w-full py-7 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-widest hover:-translate-y-1 duration-300 "
+              className="w-full py-6 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-widest hover:-translate-y-1 duration-300 "
               onClick={handleClick}
               type="submit"
             >
