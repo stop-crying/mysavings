@@ -25,12 +25,12 @@ export default function Home() {
         
          
         </span> */}
-        <div className="w-full flex flex-col gap-10 items-center justify-center bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] p-10 ">
+        <div className="w-full flex flex-col gap-10 items-center justify-center p-10 ">
           <span className="w-full flex flex-col justify-center items-center gap-5 fixed top-0 left-0 right-0 z-10 bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] py-5">
           <h1 className="text-base tracking-wide font-light text-white ">
             My Savings
           </h1>
-          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300  w-full  text-center bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)]">
+          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300 w-full text-center">
             £{value}
           </b>
           </span>
