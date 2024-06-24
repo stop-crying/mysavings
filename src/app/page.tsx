@@ -19,14 +19,14 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[#353747]">
+    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[#353747] relative">
       <div className="h-full w-full flex items-center justify-center flex-col">
-        <span className="w-full flex items-center justify-center p-10 gap-3">
+        <span className="w-full flex items-center justify-center p-10 gap-3 sticky top-0">
         
           <h1 className="text-base tracking-wide font-light text-white ">My Savings</h1>
         </span>
         <div className="w-full flex flex-col gap-3 items-center justify-center bg-[#353747] p-10">
-          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300">
+          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300 sticky w-full top-0 text-center bg-[#353747]">
             £{value}
           </b>
           <p className="text-[#797b8a] font-extralight mb-5">
@@ -43,13 +43,13 @@ export default function Home() {
             className="shadow-2xl"
           />
         </div>
-        <div className="w-full flex flex-col gap-6 items-center justify-center bg-[#353747] p-10">
-          <h2 className="w-full text-start font-light tracking-wide ">
+        <div className="w-full flex flex-col gap-6 items-center justify-center bg-[#353747] py-10 px-5">
+          <h2 className="w-full text-start font-light tracking-wide  text-[#797b8a]">
             Personal Savings
           </h2>
             <Savings />
         </div>
-        <div className="flex flex-col w-full items-center justify-center gap-10 px-10">
+        <div className="flex flex-col w-full items-center justify-center gap-10 px-5">
           <p className="w-full text-start font-light tracking-wide text-[#797b8a] ">
             One Click Saving
           </p>
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full p-10  ">
+        <div className="w-full p-5  ">
           <button
             className="w-full py-6 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-wide hover:-translate-y-1 duration-300 "
             onClick={() => {
