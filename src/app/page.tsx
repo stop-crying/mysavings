@@ -34,7 +34,7 @@ export default function Home() {
             £{value}
           </b>
           </span>
-          <p className="text-[#797b8a] font-extralight mb-5 mt-48">
+          <p className="text-[#797b8a] font-extralight mb-5 mt-40">
             Total amount saved so far
           </p>
           <hr
