@@ -1,6 +1,6 @@
 "use client";
 
-interface persnoalProps {
+export interface persnoalProps {
   toDo: string;
   price: number;
 }
