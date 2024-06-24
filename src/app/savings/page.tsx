@@ -50,22 +50,23 @@ export default function Savings() {
     <div className="w-full flex items-center justify-center flex-col gap-8">
       {savingsArray.map((savings, key) => {
         return (
+          // eslint-disable-next-line react/jsx-key
           <Personal
-            toDo={savings.todo}
-            price={savings.price}
-
-            key={key}
-          />
+           params={{
+                toDo: savings.todo,
+                price: savings.price
+            }} />
         );
       })}
       {
       arr.map((array, key) => {
         return (
-          <Personal
-            toDo={array.todo}
-            price={array.price}
-            key={key}
-          />
+         // eslint-disable-next-line react/jsx-key
+         <Personal
+         params={{
+              toDo: array.todo,
+              price: array.price
+          }} />
         );
       })}
       <div className="w-full mt-5">
