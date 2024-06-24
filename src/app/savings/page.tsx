@@ -79,7 +79,7 @@ export default function Savings() {
           modal
           closeOnEscape
         >
-          <div className="w-[350px] p-8 flex flex-col items-center justify-center gap-7 bg-[#161720] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
+          <div className="w-[350px] p-8 flex flex-col items-center justify-center gap-7 bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
             <label
               htmlFor=""
               className="w-full text-start text-sm text-[#7b7d8c]"
