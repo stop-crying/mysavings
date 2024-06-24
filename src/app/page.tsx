@@ -19,13 +19,13 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] relative">
+    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] bg-contain">
       <div className="h-full w-full flex items-center justify-center flex-col">
         {/* <span className="w-full flex items-center justify-center p-10 gap-3 sticky top-0">
         
          
         </span> */}
-        <div className="w-full flex flex-col gap-10 items-center justify-center p-10 ">
+        <div className="w-full flex flex-col gap-10 items-center justify-center p-5 ">
           <span className="w-full flex flex-col justify-center items-center gap-8 py-5">
           <h1 className="text-base tracking-wide font-light text-white ">
             My Savings
@@ -48,7 +48,7 @@ export default function Home() {
             className="shadow-2xl"
           />
         </div>
-        <div className="w-full flex flex-col gap-6 items-center justify-center py-10 px-5">
+        <div className="w-full flex flex-col gap-6 items-center justify-center py-5 px-5">
           <h2 className="w-full text-start font-light tracking-wide  text-[#797b8a]">
             Personal Savings
           </h2>

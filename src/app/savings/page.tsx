@@ -73,7 +73,7 @@ export default function Savings() {
       <div className="w-full mt-5">
         <Popup
           trigger={
-            <button className="w-full py-6 text-center bg-[#da8113] text-white rounded-3xl text-sm font-light  tracking-widest ">
+            <button className="w-full py-5 text-center bg-[#da8113] text-white rounded-3xl text-sm font-medium  tracking-wide ">
               Create new savings
             </button>
           }
