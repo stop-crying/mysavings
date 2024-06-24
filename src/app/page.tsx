@@ -48,7 +48,7 @@ export default function Home() {
             className="shadow-2xl"
           />
         </div>
-        <div className="w-full flex flex-col gap-6 items-center justify-center bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] py-10 px-5">
+        <div className="w-full flex flex-col gap-6 items-center justify-center py-10 px-5">
           <h2 className="w-full text-start font-light tracking-wide  text-[#797b8a]">
             Personal Savings
           </h2>
