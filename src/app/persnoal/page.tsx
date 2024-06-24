@@ -1,8 +1,10 @@
 "use client";
 
 export interface persnoalProps {
+    params : {
     toDo: string;
     price: number;
+    }
   }
   [];
   
