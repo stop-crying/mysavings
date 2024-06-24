@@ -79,7 +79,7 @@ export default function Savings() {
           modal
           closeOnEscape
         >
-          <div className="w-[350px] p-20 flex flex-col items-center justify-center gap-7 bg-[#161720] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
+          <div className="w-[350px] p-8 flex flex-col items-center justify-center gap-7 bg-[#161720] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
             <label
               htmlFor=""
               className="w-full text-start text-sm text-[#7b7d8c]"
@@ -107,7 +107,7 @@ export default function Savings() {
               className="w-full h-[40px] placeholder:text-sm placeholder:font-light pl-5 text-sm font-bold outline-none rounded-xl text-black "
             />
             <button
-              className="w-full h-[45px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest hover:-translate-y-1 duration-300 "
+              className="w-full py-7 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-widest hover:-translate-y-1 duration-300 "
               onClick={handleClick}
               type="submit"
             >

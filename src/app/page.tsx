@@ -23,10 +23,10 @@ export default function Home() {
       <div className="h-full w-full flex items-center justify-center flex-col">
         <span className="w-full flex items-center justify-center p-10 gap-3">
         
-          <h1 className="text-xl tracking-wider font-light ">My Savings</h1>
+          <h1 className="text-base tracking-wide font-light text-white ">My Savings</h1>
         </span>
         <div className="w-full flex flex-col gap-3 items-center justify-center bg-[#353747] p-10">
-          <b className="text-[45px] font-extrabold tracking-wider duration-300">
+          <b className="text-[45px] font-bold tracking-wider duration-300 text-white">
             £{value}
           </b>
           <p className="text-[#797b8a] font-extralight mb-5">
@@ -63,7 +63,7 @@ export default function Home() {
                 }
                 modal
               >
-                <div className="w-[350px] p-20 flex flex-col items-center justify-center gap-5 bg-[#161720] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
+                <div className="w-[350px] p-10 flex flex-col items-center justify-center gap-5 bg-[#161720] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
                   <input
                     type="number"
                     placeholder="how much do you wish to save?"
@@ -71,10 +71,10 @@ export default function Home() {
                     className="w-full h-[40px] placeholder:text-sm placeholder:font-light pl-5 text-sm font-bold outline-none rounded-xl text-black"
                   />
                   <button
-                    className="w-full h-[45px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest hover:-translate-y-1 duration-300 "
+                    className="w-full py-7 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-wide hover:-translate-y-1 duration-300 "
                     onClick={() => {
                       setValue(change + value);
-                      close();
+                     
                     }}
                   >
                     Enter Amount
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div className="w-full p-10  ">
           <button
-            className="w-full h-[50px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest hover:-translate-y-1 duration-300 "
+            className="w-full py-8 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-widest hover:-translate-y-1 duration-300 "
             onClick={() => {
               setValue(value);
             }}
