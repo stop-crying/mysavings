@@ -26,7 +26,7 @@ export default function Home() {
          
         </span> */}
         <div className="w-full flex flex-col gap-10 items-center justify-center bg-[#353747] p-10 ">
-          <span className="w-full flex flex-col justify-center items-center gap-12 fixed top-0 left-0 right-0 z-10 bg-[#353747] py-10">
+          <span className="w-full flex flex-col justify-center items-center gap-5 fixed top-0 left-0 right-0 z-10 bg-[#353747] py-5">
           <h1 className="text-base tracking-wide font-light text-white ">
             My Savings
           </h1>
@@ -34,7 +34,7 @@ export default function Home() {
             £{value}
           </b>
           </span>
-          <p className="text-[#797b8a] font-extralight mb-5 mt-64">
+          <p className="text-[#797b8a] font-extralight mb-5 mt-56">
             Total amount saved so far
           </p>
           <hr
