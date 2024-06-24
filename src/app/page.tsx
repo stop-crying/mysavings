@@ -21,15 +21,20 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[#353747] relative">
       <div className="h-full w-full flex items-center justify-center flex-col">
-        <span className="w-full flex items-center justify-center p-10 gap-3 sticky top-0">
+        {/* <span className="w-full flex items-center justify-center p-10 gap-3 sticky top-0">
         
-          <h1 className="text-base tracking-wide font-light text-white ">My Savings</h1>
-        </span>
-        <div className="w-full flex flex-col gap-3 items-center justify-center bg-[#353747] p-10">
-          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300 sticky w-full top-0 text-center bg-[#353747]">
+         
+        </span> */}
+        <div className="w-full flex flex-col gap-10 items-center justify-center bg-[#353747] p-10 ">
+          <span className="w-full flex flex-col justify-center items-center gap-12 fixed top-0 left-0 right-0 z-10 bg-[#353747] py-10">
+          <h1 className="text-base tracking-wide font-light text-white ">
+            My Savings
+          </h1>
+          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300  w-full  text-center bg-[#353747]">
             £{value}
           </b>
-          <p className="text-[#797b8a] font-extralight mb-5">
+          </span>
+          <p className="text-[#797b8a] font-extralight mb-5 mt-64">
             Total amount saved so far
           </p>
           <hr
@@ -47,7 +52,7 @@ export default function Home() {
           <h2 className="w-full text-start font-light tracking-wide  text-[#797b8a]">
             Personal Savings
           </h2>
-            <Savings />
+          <Savings />
         </div>
         <div className="flex flex-col w-full items-center justify-center gap-10 px-5">
           <p className="w-full text-start font-light tracking-wide text-[#797b8a] ">
