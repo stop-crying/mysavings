@@ -1,11 +1,13 @@
 "use client";
 
-export interface personalProps {
-  params: { toDo: string; price: number };
-}
-[];
+export interface persnoalProps {
+    toDo: string;
+    price: number;
+  }
+  [];
+  
 
-export default function Personal({ params }: personalProps) {
+export default function Personal({ params }: persnoalProps) {
   return (
     <div className=" w-full mt-3 flex items-center justify-center flex-col gap-8">
       <div className="w-full h-[70px] bg-[#2d2f3f] rounded-3xl drop-shadow-xl shadow-xl flex items-center justify-between gap-6 p-7 hover:-translate-y-1 duration-300">
