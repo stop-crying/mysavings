@@ -55,7 +55,7 @@ export default function Savings() {
            params={{
                 toDo: savings.todo,
                 price: savings.price
-            }} />
+            }} key={key} />
         );
       })}
       {
@@ -66,7 +66,8 @@ export default function Savings() {
          params={{
               toDo: array.todo,
               price: array.price
-          }} />
+          }}  key={key} />
+         
         );
       })}
       <div className="w-full mt-5">
@@ -79,7 +80,7 @@ export default function Savings() {
           modal
           closeOnEscape
         >
-          <div className="w-[350px] p-8 flex flex-col items-center justify-center gap-7 bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] rounded-2xl drop-shadow-xl shadow-xl duration-300 ease-in-out transition-all">
+          <div className="w-[350px] p-8 flex flex-col items-center justify-center gap-7 bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] rounded-2xl drop-shadow-xl shadow-sm shadow-slate-200 duration-300 ease-in-out transition-all">
             <label
               htmlFor=""
               className="w-full text-start text-sm text-[#7b7d8c]"
