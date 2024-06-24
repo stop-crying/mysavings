@@ -26,7 +26,7 @@ export default function Home() {
           <h1 className="text-xl tracking-wider font-light ">My Savings</h1>
         </span>
         <div className="w-full flex flex-col gap-3 items-center justify-center bg-[#353747] p-10">
-          <b className="text-[45px] font-extrabold tracking-wider duration-300">
+          <b className="text-[45px] font-extrabold tracking-wider text-white duration-300">
             £{value}
           </b>
           <p className="text-[#797b8a] font-extralight mb-5">
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div className="w-full p-10  ">
           <button
-            className="w-full h-[50px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest hover:-translate-y-1 duration-300 "
+            className="w-full p-10 text-center bg-[#da8113] text-white rounded-3xl text-sm font-bold tracking-wide hover:-translate-y-1 duration-300 "
             onClick={() => {
               setValue(value);
             }}
