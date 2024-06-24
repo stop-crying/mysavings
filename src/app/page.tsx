@@ -74,7 +74,7 @@ export default function Home() {
                     className="w-full h-[45px] text-center bg-[#da8113] text-white rounded-3xl text-xl font-bold tracking-widest hover:-translate-y-1 duration-300 "
                     onClick={() => {
                       setValue(change + value);
-                      close();
+                      
                     }}
                   >
                     Enter Amount
