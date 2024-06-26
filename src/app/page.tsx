@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] bg-contain">
+    <main className="flex min-h-screen flex-col w-full items-center justify-between  bg-[url(https://wallpapercave.com/wp/wp7130410.jpg)] bg-clip-border">
       <div className="h-full w-full flex items-center justify-center flex-col">
         {/* <span className="w-full flex items-center justify-center p-10 gap-3 sticky top-0">
         
@@ -61,6 +61,7 @@ export default function Home() {
           <div className="w-full my-5 grid grid-cols-2 items-center justify-center gap-7">
             <div className="flex items-center justify-center">
               <Popup
+
                 trigger={
                   <button className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl">
                     Custom

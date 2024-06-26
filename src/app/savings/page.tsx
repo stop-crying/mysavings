@@ -10,8 +10,19 @@ export default function Savings() {
   const [goal, setGoal] = useState<number>(0);
   const [arr, setArr] = useState([
     {
-      todo: "",
-      price: 0,
+      todo: "Outings",
+      price: 4000,
+      // image: outings,
+    },
+    {
+      todo: "Rent a new apartment",
+      price: 1100,
+      // image: apartment,
+    },
+    {
+      todo: "New laptop",
+      price: 1100,
+      // image: gadget,
     },
   ]);
 
@@ -27,9 +38,8 @@ export default function Savings() {
     const newArray = {
       todo: name,
       price: goal,
-
     };
-   
+
     setArr((a) => [...a, newArray]);
 
     setGoal(0);
@@ -48,7 +58,7 @@ export default function Savings() {
 
   return (
     <div className="w-full flex items-center justify-center flex-col gap-8">
-      {savingsArray.map((savings, key) => {
+      {/* {savingsArray.map((savings, key) => {
         return (
           // eslint-disable-next-line react/jsx-key
           <Personal
@@ -57,17 +67,17 @@ export default function Savings() {
                 price: savings.price
             }} key={key} />
         );
-      })}
-      {
-      arr.map((array, key) => {
+      })} */}
+      {arr.map((array, key) => {
         return (
-         // eslint-disable-next-line react/jsx-key
-         <Personal
-         params={{
+          // eslint-disable-next-line react/jsx-key
+          <Personal
+            params={{
               toDo: array.todo,
-              price: array.price
-          }}  key={key} />
-         
+              price: array.price,
+            }}
+            key={key}
+          />
         );
       })}
       <div className="w-full mt-5">
@@ -90,6 +100,7 @@ export default function Savings() {
             <input
               type="text"
               placeholder="Purpose of the savings?"
+              required
               onChange={handleChange}
               value={name}
               className="w-full h-[40px] placeholder:text-sm placeholder:font-light pl-5 text-sm font-bold outline-none rounded-xl text-black"
@@ -103,6 +114,7 @@ export default function Savings() {
             <input
               type="number"
               placeholder="Goal amount"
+              required
               value={goal}
               onChange={GoalChange}
               className="w-full h-[40px] placeholder:text-sm placeholder:font-light pl-5 text-sm font-bold outline-none rounded-xl text-black "
