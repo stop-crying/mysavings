@@ -11,11 +11,21 @@ import Savings from "./savings/page";
 
 export default function Home() {
   const [value, setValue] = useState<number>(0);
+  const [show, setShow] = useState<boolean>(false);
 
   let change: number;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     change = parseInt(e.target.value);
+  };
+
+  const date = new Date().toLocaleDateString("en-us");
+  const ten = 10;
+
+  const tenHandler = () => {
+    setValue(value + 10);
+    setShow(true);
+    console.log(`saved ${value + ten} • ${date}`);
   };
 
   return (
@@ -27,12 +37,12 @@ export default function Home() {
         </span> */}
         <div className="w-full flex flex-col gap-10 items-center justify-center p-5 ">
           <span className="w-full flex flex-col justify-center items-center gap-8 py-5">
-          <h1 className="text-base tracking-wide font-light text-white ">
-            My Savings
-          </h1>
-          <b className="text-[45px] font-extrabold text-white tracking-wider duration-300 w-full text-center">
-            £{value}
-          </b>
+            <h1 className="text-base tracking-wide font-light text-white ">
+              My Savings
+            </h1>
+            <b className="text-[45px] font-extrabold text-white tracking-wider duration-300 w-full text-center">
+              £{value}
+            </b>
           </span>
           <p className="text-[#797b8a] font-extralight mb-5 ">
             Total amount saved so far
@@ -61,7 +71,6 @@ export default function Home() {
           <div className="w-full my-5 grid grid-cols-2 items-center justify-center gap-7">
             <div className="flex items-center justify-center">
               <Popup
-
                 trigger={
                   <button className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl">
                     Custom
@@ -90,7 +99,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <button
                 className="w-[100px] h-[45px] bg-[#fe8d18] text-sm text-white  tracking-wide font-light rounded-2xl"
-                onClick={() => setValue(value + 10)}
+                onClick={tenHandler}
               >
                 £10
               </button>
@@ -128,6 +137,14 @@ export default function Home() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="p-5 min-w-full">
+          {show && (
+            <p className="w-full p-5 text-center text-lg font-light tracking-wide text-white ring-1 ring-[#797b8a] rounded-3xl flex items-center justify-center gap-16">
+              You saved £{value}
+              <b>{date}</b>
+            </p>
+          )}
         </div>
         <div className="w-full p-5  ">
           <button

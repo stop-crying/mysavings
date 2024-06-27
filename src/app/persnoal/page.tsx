@@ -1,13 +1,13 @@
 "use client";
 
 export interface persnoalProps {
-    params : {
+  params: {
     toDo: string;
     price: number;
-    }
-  }
-  [];
-  
+    date: Date;
+  };
+}
+[];
 
 export default function Personal({ params }: persnoalProps) {
   return (
@@ -16,22 +16,16 @@ export default function Personal({ params }: persnoalProps) {
         <span className="flex items-center justify-center gap-5">
           <span className="w-[7px] h-[7px] bg-[#da8113] rounded-full"></span>
           <span className="flex flex-col justify-start items-start gap-2">
-            <b className="text-base font-light text-white">
-              {params.toDo}
-            </b>
+            <b className="text-base font-light text-white">{params.toDo}</b>
             <p className="text-[#7b7d8c] text-sm font-extralight tracking-wide ">
-              Anytime savings.
+              Anytime savings • <i>{params.date.toLocaleDateString("en-us")}</i>
             </p>
           </span>
         </span>
         <span className="flex items-center justify-center gap-4">
           <span className="flex flex-col justify-start items-start gap-2">
-            <p className="text-[#7b7d8c] font-extralight text-sm  ">
-              Goal
-            </p>
-            <b className="text-base text-white font-bold ">
-              £{params.price}
-            </b>
+            <p className="text-[#7b7d8c] font-extralight text-sm  ">Goal</p>
+            <b className="text-base text-white font-bold ">£{params.price}</b>
           </span>
           <span className="w-[7px] h-[7px] bg-[#da8113] rounded-full"></span>
         </span>

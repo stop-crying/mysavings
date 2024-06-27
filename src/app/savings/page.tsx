@@ -75,6 +75,7 @@ export default function Savings() {
             params={{
               toDo: array.todo,
               price: array.price,
+              date: new Date(),
             }}
             key={key}
           />
